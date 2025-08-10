@@ -1,0 +1,10 @@
+export * from "./BaseModel";
+export * from "./IProviderAdapter";
+export * from "./ProviderAdaptersFactory";
+export * from "./providers";
+export * from "./errors/AppError";
+export * from "./internal/models/User";
+export {User as Provider1UserModel, UserBuilder as Provider1UserBuilder } from "./provider1/models/User";
+export * from "./provider1/Provider1Adapter";
+export {User as Provider2UserModel, UserBuilder as Provider2UserBuilder } from "./provider2/models/User";
+export * from "./provider2/Provider2Adapter";

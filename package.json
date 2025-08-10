@@ -1,0 +1,25 @@
+{
+  "name": "schema-transformation-lib",
+  "version": "1.0.0",
+  "description": "Schema Transformation Lib",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "schema-transformation-lib"
+  },
+  "author": "Gheri Rupchandani",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^30.0.5",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.9.2"
+  }
+}

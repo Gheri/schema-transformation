@@ -1,13 +1,16 @@
 import { Provider2Adapter } from "../../src/provider2/Provider2Adapter";
 import { User } from "../../src/internal/models/User";
 import { User as Provider2User } from "../../src/provider2/models/User";
+import { ProviderAdaptersFactory } from "../../src/ProviderAdaptersFactory";
+import { IProviderAdapter } from "../../src/IProviderAdapter";
+import { Provider, Version } from "../../src/providers";
 
 describe('Provider2Adapter', () => {
-    let adapter: Provider2Adapter;
-
-    beforeEach(() => {
-        adapter = new Provider2Adapter();
-    });
+    let adapter: IProviderAdapter;
+    
+        beforeEach(() => {
+            adapter = new ProviderAdaptersFactory().getProviderAdapter(Provider.Provider2, Version.Version1);
+        });
 
     it('Convert Internal User Model to Provider 2 User Model', () => {
 

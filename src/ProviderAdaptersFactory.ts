@@ -1,6 +1,7 @@
 import { ProviderAdapterNotFound } from "./errors/AppError";
 import { IProviderAdapter } from "./IProviderAdapter";
 import { Provider1Adapter } from "./provider1/Provider1Adapter";
+import { Provider2Adapter } from "./provider2/Provider2Adapter";
 import { Provider, Version } from "./providers";
 
 export class ProviderAdaptersFactory {
@@ -9,7 +10,7 @@ export class ProviderAdaptersFactory {
        this.mapOfAdapters = new Map<string, IProviderAdapter>();
 
        this.mapOfAdapters.set(Provider.Provider1 + Version.Version1, new Provider1Adapter());
-       this.mapOfAdapters.set(Provider.Provider2 + Version.Version1, new Provider1Adapter());
+       this.mapOfAdapters.set(Provider.Provider2 + Version.Version1, new Provider2Adapter());
     }
 
     getProviderAdapter(providerName: Provider, version: Version): IProviderAdapter {

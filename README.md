@@ -67,7 +67,15 @@ adapter.convertProviderToUserModel(provider1UserModel);
 adapter.convertProviderToUserModel(provider2UserModel);
 
 
-## Testing
+## Development
+
+### Building
+
+```bash
+npm run build
+```
+
+### Unit Test
 
 Run the comprehensive test suite:
 
@@ -79,19 +87,6 @@ npm test
 npm run test:coverage
 
 ```
-
-### Test Coverage
-
-- **Unit Tests**: Individual model and adapter testing
-
-## Development
-
-### Building
-
-```bash
-npm run build
-```
-
 
 ## Best Practices
 

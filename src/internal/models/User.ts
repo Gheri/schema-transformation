@@ -1,4 +1,5 @@
-import { BaseModel, validateRequired } from "../../BaseModel";
+import { BaseModel } from "../../BaseModel";
+import { validateRequired } from "../../utils";
 
 export class User implements BaseModel {
     public id!: string;
@@ -20,6 +21,7 @@ export class User implements BaseModel {
     }
 
     validate(): void {
+        console.log("Validating Internal User Model");
         validateRequired(this.id, 'id');
         validateRequired(this.firstName, 'firstName');
         validateRequired(this.lastName, 'lastName');
@@ -27,6 +29,7 @@ export class User implements BaseModel {
         validateRequired(this.createdBy, 'createdBy');
         validateRequired(this.modifiedAt, 'modifiedAt');
         validateRequired(this.modifiedBy, 'modifiedBy');
+        console.log("Validating Internal User Model Successful");
     }
 
     toJSON(): Record<string, any> {

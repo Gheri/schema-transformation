@@ -66,20 +66,14 @@ provider2Adapter.convertUserModelToProvider(internalUser);
 adapter.convertProviderToUserModel(provider1UserModel);
 adapter.convertProviderToUserModel(provider2UserModel);
 
-
-## Development
-
-### Building
-
-```bash
-npm run build
 ```
 
-### Unit Test
-
-Run the comprehensive test suite:
+### Development
 
 ```bash
+# Build
+npm run build
+
 # Run all tests
 npm test
 
